@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cursive;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(100, 149, 237);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #F08080;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  color:yellow;
+  height: 300px; /* only for demonstration, should be removed */
+  background-image:url("download.jfif");
+  background-repeat:no-repeat;
+  background-size: 400px;
+ 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(165, 42, 42);
+  padding: 10px;
+  text-align: center;
+  color: rgb(15, 3, 3);
+  font-size:25px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Eveann's and Jigna's Chocolate Factory</h2>
+<hr></hr>
+
+
+
+<header>
+  <h2>Welcome!!!</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="Chocolates.html">About Ingredients</a></li>
+    
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Welcome to our page</h1>
+    <p>We specialize in making Chocolates
+      <br>
+        Nothing.
+      </p>  
+        
+  </article>
+</section>
+
+<footer>
+  <p>Goa Based Organic Company</p>
+</footer>
+
+</body>
+</html>
